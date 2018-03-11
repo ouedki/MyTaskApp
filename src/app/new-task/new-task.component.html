@@ -1,0 +1,14 @@
+<div class="col-md-6">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Add New Task</div>
+    <div class="panel-body">
+      <form #f="ngForm" (ngSubmit)="saveTask(f.value)">
+        <div class="form-group">
+          <label class="control-label">Task Name</label>
+          <input class="form-control" ngModel="" type="text" name="name" required="">
+        </div>
+        <button class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+</div>

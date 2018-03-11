@@ -1,0 +1,19 @@
+<div class="control-label">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Tasks</div>
+    <div class="panel-body">
+      <div>
+        <button class="btn btn-danger" (click)="newTask()" *ngIf="auth.isAdmin()">Add Task</button>
+      </div>
+      <table class="table table-striped">
+        <tr>
+          <th>ID</th><th>Task</th>
+        </tr>
+        <tr *ngFor="let t of tasks">
+          <td>{{t.id}}</td>
+          <td>{{t.name}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

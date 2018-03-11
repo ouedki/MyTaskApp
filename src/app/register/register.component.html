@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Sign Up</div>
+    <div class="panel-body">
+      <form #f="ngForm" (ngSubmit)="addUser(f.value)">
+        <div class="form-group">
+          <label class="control-label">Userame</label>
+          <input class="form-control" ngModel="" type="text" name="username" required="">
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password</label>
+          <input class="form-control" ngModel="" type="password" name="password" required="">
+        </div>
+        <div class="form-group">
+          <label class="control-label">Confirm Password</label>
+          <input class="form-control" ngModel="" type="password" name="confirmPassword" required="">
+        </div>
+        <button class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
